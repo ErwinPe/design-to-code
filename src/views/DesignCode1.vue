@@ -1,6 +1,6 @@
 <template>
     <div class="flex items-center justify-center bg-[#dbe5fb] font-['Inter']">
-        <div class="bg-white p-[48px] md:max-w-[787px] md:max-h-[428px] rounded-xl flex flex-col md:flex-row gap-10 m-[40px] shadow">
+        <div class="bg-white p-[48px] lg:max-w-[787px] lg:max-h-[428px] rounded-xl flex flex-col lg:flex-row gap-10 m-[40px] shadow">
             <!-- Left col -->
             <img src="/images/design-code-1-product.png"/>
 
