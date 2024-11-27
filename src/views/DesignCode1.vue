@@ -1,8 +1,9 @@
 <template>
     <div class="flex items-center justify-center bg-[#dbe5fb] font-['Inter']">
-        <div class="bg-white p-[48px] lg:max-w-[787px] lg:max-h-[428px] rounded-xl flex flex-col lg:flex-row gap-10 m-[40px] shadow">
+        <div
+            class="bg-white p-[48px] lg:max-w-[787px] lg:max-h-[428px] rounded-xl flex flex-col lg:flex-row gap-9 m-[40px] shadow scale-125">
             <!-- Left col -->
-            <img src="/images/design-code-1-product.png"/>
+            <img src="/images/design-code-1-product.png" class="rounded-xl" />
 
             <!-- Right col -->
             <div class="flex flex-col justify-between min-h-[332px]">
@@ -33,8 +34,10 @@
                         class="bg-[#477AEB] hover:bg-blue-700 text-white text-[16px] font-[600] py-2 px-4 rounded-xl grow">
                         Ajouter au panier
                     </button>
-                    <button class="bg-[#F6F8FE] text-[#477AEB] hover:bg-red-200 hover:text-red-500 rounded-xl p-3">
-                        <HeartIcon class="size-7 stroke-2" />
+                    <button class="bg-[#F6F8FE] text-[#477AEB] hover:bg-red-200 hover:text-red-500 rounded-xl p-3"
+                        :class="{ 'text-red-500': liked }" @click="liked = !liked">
+                        <HeartIcon class="size-7 stroke-2" v-if="!liked" />
+                        <HeartIconSolid class="size-7 stroke-2" v-else />
                     </button>
                 </div>
             </div>
@@ -44,5 +47,8 @@
 
 <script setup lang="ts">
 import { StarIcon, HeartIcon } from '@heroicons/vue/24/outline'
-import { StarIcon as StarIconSolid } from '@heroicons/vue/24/solid'
+import { StarIcon as StarIconSolid, HeartIcon as HeartIconSolid } from '@heroicons/vue/24/solid';
+import { ref } from 'vue';
+
+const liked = ref(false);
 </script>
