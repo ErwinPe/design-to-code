@@ -1,11 +1,11 @@
 <template>
-    <div class="h-full flex items-center justify-center bg-[#dbe5fb] font-['Inter']">
-        <div class="bg-white p-[48px] max-w-[787px] max-h-[428px] rounded-xl flex gap-10">
+    <div class="flex items-center justify-center bg-[#dbe5fb] font-['Inter']">
+        <div class="bg-white p-[48px] md:max-w-[787px] md:max-h-[428px] rounded-xl flex flex-col md:flex-row gap-10 m-[40px]">
             <!-- Left col -->
-            <img src="/images/design-code-1-product.png" />
+            <img src="/images/design-code-1-product.png"/>
 
             <!-- Right col -->
-            <div class="flex flex-col justify-between">
+            <div class="flex flex-col justify-between min-h-[332px]">
                 <div>
                     <div class="flex justify-between align-end">
                         <div class="rounded-full bg-[#020712CC] px-[14px] py-[7px] text-[12px] text-white">

@@ -1,7 +1,7 @@
 <template>
-  <div class="h-screen ">
+  <div class="min-h-screen">
     <router-view :key="$route.path" v-slot="{ Component }">
-      <component :is="Component" class="overflow-auto" />
+      <component :is="Component" class="overflow-auto min-h-screen" />
     </router-view>
   </div>
 </template>
