@@ -14,8 +14,17 @@
                         </div>
                         <p class="text-[#02071280] text-[12px]">XV-3855988</p>
                     </div>
-                    <p class="text-[32px] font-[700] leading-[32px] mt-3">Montre Connectée FitLife Pro 5+</p>
-                    <p class="mt-2">43 notes</p>
+                    <p class="text-[#020712CC] text-[32px] font-[700] leading-[32px] mt-3">Montre Connectée FitLife Pro
+                        5+</p>
+                    <div class="flex mt-2 align-center">
+                        <StarIconSolid class="size-5 text-[#EDCF5D]" />
+                        <StarIconSolid class="size-5 text-[#EDCF5D]" />
+                        <StarIconSolid class="size-5 text-[#EDCF5D]" />
+                        <StarIconSolid class="size-5 text-[#EDCF5D]" />
+                        <StarIcon class="size-5 text-[#EDCF5D]" />
+                        <p class="ml-3 text-[12px] text-[#02071280]">43 notes</p>
+                    </div>
+
                 </div>
 
 
@@ -25,15 +34,16 @@
                 </div>
 
 
-                <div class="flex">
+                <div class="flex gap-3">
 
-                    <button class="bg-[#477AEB] hover:bg-blue-700 text-white py-2 px-4 rounded-xl grow">
+                    <button
+                        class="bg-[#477AEB] hover:bg-blue-700 text-white text-[16px] font-[500] py-2 px-4 rounded-xl grow">
                         Ajouter au panier
                     </button>
-                    <button class="bg-[#F6F8FE] text-[#477AEB] rounded-xl">
-                        X
-                    </button>
 
+                    <button class="bg-[#F6F8FE] text-[#477AEB] rounded-xl p-3">
+                        <HeartIcon class="size-7 text-[#477AEB]" />
+                    </button>
 
                 </div>
             </div>
@@ -50,6 +60,9 @@
 </template>
 
 <script setup lang="ts">
+import { StarIcon, HeartIcon } from '@heroicons/vue/24/outline'
+import { StarIcon as StarIconSolid } from '@heroicons/vue/24/solid'
+
 </script>
 
 <style lang="scss" scoped></style>
