@@ -9,7 +9,7 @@
 
                 <div>
                     <div class="flex justify-between align-end">
-                        <div class="rounded-full bg-[#020712CC] px-[16px] py-[8px] text-[12px] text-white">
+                        <div class="rounded-full bg-[#020712CC] px-[14px] py-[7px] text-[12px] text-white">
                             FitLife
                         </div>
                         <p class="text-[#02071280] text-[12px]">XV-3855988</p>
@@ -28,7 +28,7 @@
                 <div class="flex">
 
                     <button class="bg-[#477AEB] hover:bg-blue-700 text-white py-2 px-4 rounded-xl grow">
-                        Ajouter au pânier
+                        Ajouter au panier
                     </button>
                     <button class="bg-[#F6F8FE] text-[#477AEB] rounded-xl">
                         X
