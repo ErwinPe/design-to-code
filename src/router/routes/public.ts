@@ -2,13 +2,13 @@ import { RouteRecordRaw } from "vue-router";
 
 export default [
   {
-    path: "/",
+    path: "/home",
     name: "Home",
     component: () => import("@/views/Home.vue"),
     meta: { title: "home.title" },
   },
   {
-    path: "/1",
+    path: "/",
     name: "DesginToCode1",
     component: () => import("@/views/DesignCode1.vue"),
     meta: { title: "design-code.title" },
