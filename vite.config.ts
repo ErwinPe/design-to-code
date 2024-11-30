@@ -4,6 +4,7 @@ import * as path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "/design-to-code",
   plugins: [vue()],
   server: {
     port: 3000,
@@ -16,4 +17,10 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  build: {
+    outDir: 'dist', // Output directory
+    rollupOptions: {
+      input: path.resolve(__dirname, 'index.html') // Entry point for the build
+    }
+  }
 });
