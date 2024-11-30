@@ -16,10 +16,10 @@ jobs:
           node-version: '21'
 
       - name: 📥 Install dependencies
-        run: pnpm install
+        run: npm install
 
       - name: 🏗️ Build
-        run: pnpm run build
+        run: npm run build
 
       - name: 🚀Deploy to GitHub Pages🚀  // --> this deploys to gh-pages
         if: github.ref == 'refs/heads/main'
