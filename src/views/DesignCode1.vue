@@ -1,6 +1,6 @@
 <template>
     <div class="flex items-center justify-center bg-[#dbe5fb]">
-        <DesignCode1ProductCard class="xl:scale-150 m-[40px]" />
+        <DesignCode1ProductCard class="xl:scale-125 m-[40px]" />
     </div>
 </template>
 
