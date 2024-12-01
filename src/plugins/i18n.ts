@@ -7,6 +7,6 @@ export const i18n = createI18n({
   fallbackLocale: "fr",
   warnHtmlMessage: false,
   messages: {
-    fr: fr
+    fr: fr,
   },
 });

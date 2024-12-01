@@ -7,8 +7,4 @@ import { i18n } from "@/plugins/i18n";
 
 const app = createApp(App);
 
-app
-  .use(createPinia())
-  .use(i18n)
-  .use(router)
-  .mount("#app");
+app.use(createPinia()).use(i18n).use(router).mount("#app");
