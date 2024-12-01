@@ -29,10 +29,19 @@
             </div>
 
             <div class="flex gap-3">
-                <button
-                    class="bg-[#477AEB] hover:bg-blue-700 text-white text-[16px] font-[600] py-2 px-4 rounded-xl grow">
-                    Ajouter au panier
+                <button @click="quantity++" v-if="!quantity"
+                    class="bg-[#477AEB] hover:bg-green-700 text-white text-[16px] font-[600] py-2 px-4 rounded-xl grow flex group relative items-center justify-center">
+                    <p class="group-hover:-translate-x-5 ease  duration-300 transform">Ajouter au panier</p>
+                    <ShoppingCartIcon
+                        class="size-5 stroke-2 absolute right-0 top-[30%]  duration-300 transform translate-x-full group-hover:-translate-x-5 ease " />
                 </button>
+                <div v-else
+                    class="bg-[#477AEB] w-full rounded-xl text-white flex justify-between items-center py-2 px-8">
+                    <TrashIcon class="size-5 cursor-pointer stroke-2" v-if="quantity === 1" @click="quantity = 0" />
+                    <MinusIcon class="size-5 stroke-2 cursor-pointer" v-else @click="quantity--" />
+                    <p>{{ quantity }}</p>
+                    <PlusIcon class="size-5 stroke-2 cursor-pointer" @click="quantity++" />
+                </div>
                 <button class="bg-[#F6F8FE] text-[#477AEB] hover:bg-red-200 hover:text-red-500 rounded-xl p-3"
                     :class="{ 'text-red-500': liked }" @click="liked = !liked">
                     <HeartIcon class="size-7 stroke-2" v-if="!liked" />
@@ -44,9 +53,10 @@
 </template>
 
 <script setup lang="ts">
-import { StarIcon, HeartIcon } from '@heroicons/vue/24/outline'
+import { StarIcon, HeartIcon, ShoppingCartIcon, TrashIcon, PlusIcon, MinusIcon } from '@heroicons/vue/24/outline'
 import { StarIcon as StarIconSolid, HeartIcon as HeartIconSolid } from '@heroicons/vue/24/solid';
 import { ref } from 'vue';
 
 const liked = ref(false);
+const quantity = ref(0);
 </script>
