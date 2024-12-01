@@ -41,7 +41,7 @@
             <div class="flex gap-3">
                 <!-- Add to cart button -->
                 <div
-                    class="text-white text-[16px] font-[600] rounded-xl grow flex bg-[#477AEB]"
+                    class="text-white text-[16px] font-[600] rounded-xl grow flex bg-[#477AEB] overflow-hidden"
                 >
                     <!-- Initial state -->
                     <button
