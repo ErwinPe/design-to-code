@@ -1,6 +1,6 @@
 <template>
     <div
-        class="bg-white p-[48px] lg:max-w-[787px] lg:max-h-[428px] rounded-xl flex flex-col lg:flex-row gap-9 m-[40px] shadow font-['Inter']">
+        class="bg-white p-[48px] lg:max-w-[787px] lg:max-h-[428px] rounded-xl flex flex-col lg:flex-row gap-9 shadow font-['Inter']">
         <!-- Left col -->
         <img src="/images/design-code-1-product.png" class="rounded-xl" />
 
