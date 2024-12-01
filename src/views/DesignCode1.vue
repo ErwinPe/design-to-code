@@ -1,5 +1,5 @@
 <template>
-    <div class="flex items-center justify-center bg-[#dbe5fb]">
+    <div class="flex flex-col items-center justify-center bg-[#dbe5fb]">
         <DesignCode1ProductCard />
     </div>
 </template>
